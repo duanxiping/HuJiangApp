@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="attend_options">
+        <item>@string/attend_in</item>
+        <item>@string/attend_out</item>
+    </string-array>
+
+    <string-array name="face_camera">
+        <item>@string/front_camera</item>
+        <item>@string/back_camera</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+</resources>

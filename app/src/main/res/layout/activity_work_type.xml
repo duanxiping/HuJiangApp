@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.WorkTypeActivity"
+    android:background="@color/flatWhiteColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/search_bar_background">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bar_background"
+            android:hint="@string/search_work_type"
+            android:textColorHint="@color/app_dark_gray"
+            android:inputType="text|textPostalAddress"
+            android:maxLines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/search_text_size"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="6dp"
+            android:textCursorDrawable="@null"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/searchMaskView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/search_work_type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="6dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/app_dark_gray"
+                android:textSize="@dimen/search_text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+</LinearLayout>

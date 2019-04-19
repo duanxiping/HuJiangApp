@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hujiang.hujiangapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".misc.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:label="@string/sign_in"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CardCameraActivity"
+            android:label="@string/take_card"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.FaceActivity"
+            android:label="@string/face_id_verify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OcrInfoActivity"
+            android:label="@string/id_card_front_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterInfoActivity"
+            android:label="@string/additional_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterConfirmActivity"
+            android:label="@string/confirm_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AttendHistoryActivity"
+            android:label="@string/attend_history"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkerListActivity"
+            android:label="@string/worker_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkerChangeActivity"
+            android:label="@string/worker_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WorkTypeActivity"
+            android:label="@string/work_type"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
